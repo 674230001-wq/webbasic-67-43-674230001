@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatting</title>
+    <style>
+
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #acacac;
+            line-height: 2.0;
+        }
+
+
+        .container {
+            max-width: 1200px;
+            margin: 75px;
+        }
+        
+        header {}
+
+        h1 {text-align: center;}
+
+        .Gagenang {
+            text-align: left;
+            color: black;
+            font-size: 24px;
+        }
+
+        h3 {text-align: center;}
+
+        ul {}
+
+        
+        .card {
+            background-color: rgb(255, 255, 255);
+            padding: 15px 35px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px black;
+            margin: 0 auto 40px;
+            border-top: 4px solid rgb(0, 40, 219);
+            width: 800px;
+        }
+
+        .card.module-2 {border-top: 4px solid rgb(250, 5, 5);}
+        
+        .card.module-3 {border-top: 4px solid rgb(247, 50, 188);}
+
+        .card.module-4 {border-top: 4px solid rgb(24, 8, 240);}
+
+        .card.module-5 {border-top: 4px solid rgb(14, 233, 222);}
+
+        .card.module-6 {border-top: 4px solid rgb(198, 15, 235);}
+
+
+        .box {
+            border: 2px solid blue;
+            padding: 12px 20px;
+        }
+        .text-color {
+            color: rgb(255, 0, 98);
+        }
+
+        .note {}
+
+        .note::before    {}
+        
+        .ITEP{
+            background-color: rgb(212, 225, 250); 
+            border-left: #0c147c 5px solid; 
+            font-size: 16px;
+            padding: 5px 20px;
+           }
+
+        .card2 {
+            background-color: aliceblue;
+            border-radius: 8px;
+            padding: 15px 35px;
+            margin-bottom:  20px;
+            margin-top: 5px;
+            box-shadow: 0 4px 12px rgb(181, 171, 167);        
+        }
+
+        .link {
+        margin-top: 15px;
+        text-decoration: none;
+        color: #2b0ae9;
+        font-weight: bold;
+        }
+
+        .Anu{
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgb(11, 243, 11) ;
+        display:inline-block;
+        text-align: center;
+        padding: 10px 24px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgb(96, 238, 115);
+        }
+
+        .Anu2{
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgb(6, 138, 247) ;
+        display:inline-block;
+        text-align: center;
+        padding: 10px 24px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgb(144, 243, 243);
+        }
+
+        .Anu3{
+        color: #ffffff;
+        text-decoration: none;
+        background-color: rgb(43, 8, 243) ;
+        display:inline-block;
+        text-align: center;
+        padding: 10px 24px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgb(88, 255, 247);
+        }
+
+        .Anu4{
+            color: #ffffff;
+            text-decoration: none;
+            background-color: rgb(245, 5, 5) ;
+            display:inline-block;
+            text-align: center;
+            padding: 10px 24px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgb(241, 164, 168);
+        }
+
+        .Anu5{
+            color: #ffffff;
+            text-decoration: none;
+            background-color: rgb(88, 48, 35) ;
+            display:inline-block;
+            text-align: center;
+            padding: 10px 24px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgb(211, 175, 175);
+        }
+        .Anu5:hover{
+        color: #000000;
+        text-decoration: none;
+        background-color: rgb(255, 255, 255); 
+        }
+        .card-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 25px;
+}        
+        .grid-3-col {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 25px;
+}        
+
+        .image Link ing {
+            width: 260px;
+            border-radius: 12px;
+            transition: 0.3;
+        }
+        .image-Link ing:hever {
+            transform: scale(1.1);
+            box-shadow: 0 4px 12px;
+        }
+         
+
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1 class="h1">Workshop : various Link </h1>
+            <h3><p>เรียนรู้ลิ้งค์หลายรูปเเบบ พร้อมตัวอย่างเเละเเบบผึกหัด</p></h3>
+        </header>
+        <main>
+        <div class="card-grid ">
+            <!-- Card 1 -->
+             <div class="card">
+                <h2>External links</h2>
+                <div class="card2">
+                        <a href=""class="link">Visit Wikipedia</a>
+                        <p style="margin-top: 0;"><code>target="_blank"</code> เปิดลิ้งในแท็บใหม่</p>
+                    </div>
+                    <div class="card2">
+                        <a href=""class="link">Visit Google</a>
+                        <p style="margin-top: 0;"><code>target="_seft"</code> เปิดลิ้งในแท็บใหม่</p>
+                    </div>
+                </div>
+        
+        
+            <!-- Card 2 -->
+                <div class="card module-2"><h2>Internal Link & Anchor Link</h2>
+                    <pre class="ITEP">
+                    &lt;a href="about.html"&gt;About Us&lt;/a&gt;
+                    &lt;a href="#jump"&gt;Jump to Section&lt;/a&gt;
+                    &lt;h3 id="jump"&gt;This is the jump target&lt;/h3&gt;
+                </pre>
+                <a href="#za" class="Anu2">Cilck to Jump</a>
+                <h3 id="za" style="margin-top: 30px;">This is the jump target.</h3>
+                </div>
+        
+            <!-- Card 3 -->
+                <div class="card module-3">
+                    <h1 class="Gagenang">Email Link</h1>
+                    <pre class="ITEP">
+                    &lt;a href="mailto:student@example.com?subject=Hello"&gt;
+                    Send an Email
+                    &lt;/a&gt;
+                </pre>
+                <a href="mailto:674230001@webmail.npru.ac.th?subject=Hello" class="Anu3">Send an Email</a>
+                </div>
+        
+             <!-- Card 4 -->
+                <div class="card module-4">
+                    <h1 class="Gagenang">Download Linsk</h1>
+                <pre class="ITEP">
+                    &lt;a href="files/sample.txt" download&gt;Download File&lt;/a&gt;;
+                </pre>
+                 <a href="" class="Anu4">Download Textfile</a>
+                 <p class="c1">ต้องมีไฟล์ในโฟสเดอร์จึงจะดาวโหลดได้จริง </p>
+
+            </div>
+            </div>
+
+
+                 <div class="card module-6">
+                <h2>Image Link</h2>
+                <p>คลิกที่รูปเพื่อเปิดลิ้งค์</p>
+                <pre class="ITEP">&lt;a href="https://youtube.com"&gt;
+                    &lt;img src="images/sample.jpg" width="250"&gt;
+                    &lt;/a&gt;
+                </pre>
+                <a class="image Link " href="https://www.youtube.com/" target="_blank">
+                    <img src="image/youtube.png" alt="YouTube" width="150" height="100">
+                </a>
+        
+                    <div class="note">🔔หากต้องการใช้รูปของตนเอง ต้องเก็บรูปไว้ในโฟลเดอร์ เช่น images/photo.jpg</div>
+        
+                    <a href="index.html"class="Anu5">&larr; Back to HTML Tutorial </a>
+            </div>
+
+            <!-- Card 5 -->
+                <div class="card module-5">
+                <h2>Button Link</h2>
+                <p>ลิ้งที่ออกแบบให้คล้ายปุ่ม เหมาะกลับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
+                <pre class="ITEP">
+                    &lt;a href="https://www.example.com" class="btn-link"&gt;
+                        Visit Website
+                    &lt;/a&gt;
+                </pre>
+                </div>
+
+             <!-- Card 6 -->
+        <div class="card module-5">
+        <h2>Button Link</h2>
+        <p>ลิ้งที่ออกแบบให้คล้ายปุ่ม เหมาะกลับปุ่มสมัคร ปุ่มอ่านเพิ่มเติม หรือปุ่มนำทาง</p>
+        <pre class="ITEP">
+            &lt;a href="https://www.example.com" class="btn-link"&gt;
+                Visit Website
+            &lt;/a&gt;
+        </pre>
+         <a href="" class="Anu">Visit Website</a>
+        <p>สร้างปุ่มด้วยเเท็ก Bottom</p>
+          <pre class="ITEP">
+            &lt;button onclick="document.location='index.html'"&gt;HTML Tutorial&lt;/button&gt;
+            - มักใช้เมื่อลิงก์ไป หน้าในเว็บเดียวกัน
+            - ผูกกับ DOM (document) โดยตรง
+            &lt;button onclick="location.href='https://www.example.com'"&gt;Visit Website
+            &lt;/button&gt;
+            - นิยมใช้มากกว่า
+            - เหมาะทั้งลิงก์ ภายในและภายนอกเว็บ
+            - ผูกกับ window โดยตรง
+        </pre>
+
+        <div class="grid-3-col">
+            
+            <div class="Anu6">
+                <p>ปุ่ม <code class="ITEP">document.locations</code></p>
+                <button class="Ass">HTML Tutorial</button>
+            </div>
+
+            <div class="Anu6">
+                <p>ปุ่ม <code class="ITEP">location.href</code></p>
+                <button class="Ass">Visit Website</button>
+            </div>
+
+            <div class="Anu6">
+                <p class="ITEP">ตัวอย่างปุ่มจาก https://cssnippets.shefail.dve</p>
+                <button class="Ass">SUBSCRIBE</button>
+            </div>
+            
+            <div class="Anu6">
+                <p class="ITEP">เพิ่มขอบทอง</p>
+                <button class="Ass">SUBSCRIBE</button>
+            </div>
+            
+            <div class="Anu6">
+                <p class="ITEP">เพิ่มอนิเมชันเมื่อชี้ปุ่ม</p>
+                <button class="Ass">SUBSCRIBE</button>
+            </div>
+            
+            <div class="Anu6">
+                <p class="ITEP">ปุ่มสีดำ ขอบทอง เเสงวิ่ง</p>
+                <button class="Ass">SUBSCRIBE</button>
+            </div>
+        </div>
+
+        </div
+                     
+    </div>
+    </body>
+</html>
