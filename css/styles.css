@@ -9,15 +9,22 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background-color: rgb(11, 248, 149);
+  background-color: rgba(47, 48, 48, 0.507);
   color: black;
   padding: 0;
+  background-image: url("..//picture/OIPP.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
-
+html {
+  scroll-padding-top: 200px;
+  scroll-behavior: smooth;
+}
 .container {
   max-width: 1200px;
-  background-color: rgb(185, 238, 245);
-  margin: 0 auto;
+  margin: 200px auto 20px;
 }
 
 /* Card base */
@@ -50,6 +57,12 @@ code {
 }
 
 .badge {
+  color: rgb(10, 242, 250);
+  border-radius: 99px;
+  background-color: rgb(121, 117, 120);
+  padding: 3px 8px;
+  font-size: 0.8rem;
+  vertical-align: middle;
 }
 
 /* Images (global safe defaults) */
@@ -70,10 +83,10 @@ header {
   width: 100%;
 }
 h1 {
-  color: rgb(10, 68, 228);
+  color: rgb(11, 15, 252);
 }
 
-.list-menu {
+.list-menu ul {
   display: flex;
   list-style: none;
   gap: 20px;
@@ -82,27 +95,86 @@ h1 {
 } /* CSS For Group 2: Card 1: Basics  */
 
 .list-menu li {
-  background-color: rgb(0, 219, 0);
-  padding: 10px 15px;
-  border-radius: 6px;
-  margin-top: 10px;
+  margin-top: 15px;
+  transition: transform 0.7s ease;
+}
+.list-menu li:hover {
+  transform: translateY(-5px);
 }
 
-.list-menu li a {
+.list-menu a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(231, 231, 231);
   font-weight: bold;
+  /*background-color: rgb(46, 121, 219);*/
+  background: linear-gradient(135deg, rgb(206, 21, 243), rgb(228, 27, 161));
+  box-shadow: 0px 6px 30px rgb(24, 22, 22);
+  padding: 8px 12px;
+  border-radius: 6px;
 }
 
 /* CSS For Group 3: Card 2: Resize & aspect  */
-.list-menu li:hover {
-  background-color: rgb(157, 255, 0);
-} /* CSS For Group 3: Card 2: Resize & aspect  */
+.list-menu a:hover {
+  background: linear-gradient(135deg, rgb(164, 12, 194), rgb(233, 83, 183));
+}
 
 .img_small {
   display: block;
   width: 10%;
 }
+
+.position {
+  display: flex;
+  align-items: center;
+  border: 1px dashed;
+  margin: 15px 0 0;
+}
+.position.left {
+  display: flex-start;
+}
+
+.position.center {
+  justify-content: center;
+}
+.position.right {
+  justify-content: flex-end;
+}
+
+.img_small {
+  width: 100px;
+  height: auto;
+}
+/* ครอปภาพให้พอดีกรอบ */
+.img-fixed {
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+}
+.obj-fit-image {
+  width: 800px;
+  height: 200px;
+  border: 1px solid black;
+}
+.obj-fit-image.contain {
+  object-fit: contain;
+}
+.obj-fit-image.fill {
+  object-fit: fill;
+}
+.obj-fit-image.cover {
+  object-fit: cover;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+.gallery img {
+  height: 120px;
+  width: 100px;
+  object-fit: cover;
+}
+/* CSS For Group 3: Card 2: Resize & aspect  */
 /* CSS For Group 4: Card 3: Object fit  */
 
 /* CSS For Group 5: Card 4: Image as Link  */
@@ -112,7 +184,12 @@ h1 {
 /* CSS For Group 7: Card 6: Responsive  */
 
 /* CSS For Group 8: Card 7: Figure & Caption + Task  */
-
+figure {
+  margin: 0 auto;
+  text-align: center;
+}
 /* CSS For Group 9: Card 8: Local file tips  */
-
+.bg-ing {
+  background-image: url("../picture/mystical-purple-forest-stockcake.webp");
+}
 /* CSS For Group 10: Back to Tutorial */
