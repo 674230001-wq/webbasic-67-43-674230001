@@ -331,3 +331,106 @@ body {
 .Widget + .Widget {
   margin-top: 10px;
 }
+
+/**/
+.contact-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1b1b1b;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 2px 4px #424242;
+}
+.contact-form-main-card {
+  background-color: #ebe8e8;
+  padding: 40px;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgb(139, 139, 139);
+  border: 1px solid #ddd;
+}
+
+.form-label {
+  font-size: 0.8rem;
+  color: #230cf1;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-inpot,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+}
+.form-select {
+  border: 2px solid #ccc;
+}
+.contact-form-main-card .form-inpot,
+.contact-form-main-card .form-select,
+.contact-form-main-card .form-textarea {
+  background-color: rgba(255, 255, 255, 0.596);
+  border: 2px solid #ccc;
+  color: #222121;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-lom {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.form-checkbox-group {
+  margin-top: 10px;
+  display: flex;
+  gap: 15px;
+}
+.checkbox-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.82rem;
+  gap: 5px;
+}
+.checkbox-item input[type="checkbox"] {
+  transform: scale(1.15);
+  accent-color: red;
+}
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+.form-button {
+  width: 100%;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 12px;
+  corsor: pointer;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(rgb(48, 127, 247), rgb(132, 235, 248));
+  font-weight: 600;
+  margin: 10px;
+}
+.contact-form-main-card.form-button-reset {
+  background: linear-gradient(rgb(241, 66, 204), rgb(245, 136, 245));
+}
+
+/* Focus: ฟอร์มหลัก */
+.contact-form-main-card .form-input:focus,
+.contact-form-main-card .form-select:focus,
+.contact-form-main-card .form-textarea:focus {
+  outline: none;
+  background: #fff;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.18);
+  transform: translateY(-1px);
+}
+.contact-form-main-card .form-button:hover {
+  background: linear-gradient(45deg, #f03434, #f04bb9);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+}
