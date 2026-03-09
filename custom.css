@@ -75,7 +75,7 @@ body {
 }
 
 .main-nav {
-  background-color: rgb(240, 0, 0);
+  background: linear-gradient(45deg, #46e8f3, #a0f0ce);
 }
 
 .main-nav li a {
@@ -265,62 +265,51 @@ body {
   margin: 10px;
 }
 
-/* css for card 2 table  */
+/* css for card 2 table */
 .comparison-table {
-  border: 2px solid#131212;
-  /* border-collapse: collapse;*/
+  /* border: 2px solid rgb(0, 0, 0); */
+  /* border-collapse: collapse; */
+  border-radius: 6px;
+  box-shadow: 0px 2px 8px rgb(70, 68, 68);
 }
-
 .comparison-table th {
-  /* border: 2px solid#490cf0; */
-  background: linear-gradient(35deg, #004cd8f1, #3ef2f8);
+  border: 2px solid rgb(29, 146, 241);
+  color: white;
+  background: linear-gradient(35deg, rgb(24, 233, 222), rgb(70, 52, 236));
   padding: 15px;
 }
-
-.comparison-table {
-  border: 2px solid#131212;
-  /* border-collapse: collapse;*/
-}
-
 .comparison-table td {
-  /* border: 2px solid#490cf0; */
-  background-color: rgb(225, 239, 245);
+  /* border: 2px solid rgb(29, 146, 241); */
+  background-color: #ffffff;
   padding: 15px;
 }
 .comparison-table tr:nth-child(even) td {
-  background-color: rgb(156, 231, 253);
+  /* border: 2px solid rgb(29, 146, 241); */
+  background-color: rgb(202, 202, 202);
   padding: 15px;
 }
 .comparison-table tr:hover td {
-  background-color: rgb(137, 248, 230);
+  /* border: 2px solid rgb(29, 146, 241); */
+  background-color: rgb(138, 138, 138);
   padding: 15px;
-  border-radius: 4px;
-  box-shadow: 0 4px#6a41da;
 }
-
 .feature {
   font-weight: 600;
-  color: #555;
-  background-color: rgb(73, 204, 197);
-  /* border-collapse: collapse;*/
+  color: #333;
+  background-color: rgb(221, 221, 221);
 }
-
-.txt-gray {
-  font-weight: 500;
-  color: #555;
+.text-gray {
+  font-weight: 600;
+  color: #cac5c5;
 }
-
-.txt-green {
-  font-weight: 500;
-  color: #05864a;
+.text-green {
+  font-weight: 600;
+  color: #17d417;
 }
-
-.txt-red {
-  font-weight: 500;
-  color: #f00404;
+.text-red {
+  font-weight: 600;
+  color: #f31616;
 }
-
-/* -------------------------------------------------------------------------------------------------- */
 /* right side Aside */
 .Widget {
   background-color: rgb(247, 247, 247);
@@ -331,8 +320,6 @@ body {
 .Widget + .Widget {
   margin-top: 10px;
 }
-
-/**/
 .contact-title {
   font-size: 1.4rem;
   font-weight: 700;
@@ -380,7 +367,7 @@ body {
   margin-bottom: 15px;
 }
 
-.form-lom {
+.form-rom {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
@@ -415,22 +402,347 @@ body {
   font-weight: 600;
   margin: 10px;
 }
-.contact-form-main-card.form-button-reset {
-  background: linear-gradient(rgb(241, 66, 204), rgb(245, 136, 245));
-}
 
 /* Focus: ฟอร์มหลัก */
 .contact-form-main-card .form-input:focus,
 .contact-form-main-card .form-select:focus,
 .contact-form-main-card .form-textarea:focus {
-  outline: none;
-  background: #fff;
-  border-color: #667eea;
-  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.18);
-  transform: translateY(-1px);
+  background-color: rgba(255, 255, 255, 0.596);
+  border: 2px solid #ccc;
+  color: #222121;
 }
-.contact-form-main-card .form-button:hover {
-  background: linear-gradient(45deg, #f03434, #f04bb9);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+
+.contact-message-card {
+  background: linear-gradient(45deg, #2afdec, #a0f0ce);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(25, 24, 59, 0.775);
+  border: 1px solid rgb(4, 21, 70);
+  margin-bottom: 8px;
+}
+
+.contact-title-message {
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.contact-message-card .fonm-message-select,
+.contact-message-card .fonm-message-input {
+  background-color: #ffffff;
+  border: 2px solid rgb(0, 0, 0);
+  color: #000000;
+}
+
+.form-message-input,
+.form-message-select,
+.form-textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: radius 8px;
+  font: 0.9rem;
+  border-radius: 8px;
+}
+
+.form-message-select {
+  border: 2px solid #000000;
+}
+
+.form-label-message {
+  font-size: 0.82rem;
+  color: #ffffff;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.contact-follow-card {
+  background: linear-gradient(45deg, #2afdec, #a0f0ce);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 0 auto;
+  box-shadow: 0 10px 30px rgba(141, 138, 216, 0.775);
+  border: 1px solid rgb(4, 6, 43);
+  margin-bottom: 8px;
+}
+
+.form-textarea-follow {
+  resize: vertical;
+  width: 100%;
+  min-height: 100px;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/*แนะนำผู้เขียน*/
+
+.widget-title {
+  font-size: 1rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.auther-photo {
+  background-color: #e4e9ef;
+  margin: 8px 0;
+  height: 140px;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-facebook {
+  background-color: #074bc0;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 4px;
+
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.FacebookLike {
+  background-color: #e4e9ef;
+  margin: 8px 0;
+  padding: 20px;
+  border-radius: 4px;
+
+  text-align: center;
+}
+
+.ad-box {
+  background-color: #e4e9ef;
+  margin: 8px 0;
+  height: 250px;
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/*gold-table*/
+:root {
+  --line: #eedcb5;
+  --Bg01: #dcb768d3;
+  --Bg02: #c6ba9cd3;
+  --Bg03: #a5cf9dd3;
+}
+
+.wrap-gold-table {
+  background-color: var(--Bg02);
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 2px solid var(--line);
+  overflow: hidden; /*ซ้อนส่วนเกิน*/
+}
+.gold-table {
+  border: 2px solid var(--line);
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.gold-table thead th {
+  background-color: var(--Bg01);
+}
+
+.gold-table tbody th {
+  background-color: var(--Bg01);
+}
+.gold-table th,
+.gold-table td {
+  border: 1px solid var(--line);
+  padding: 10px 2px;
+}
+.gold-table .total th,
+.gold-table .total td {
+  background-color: var(--Bg03);
+}
+
+.icon {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+
+.gold-table th {
+  text-align: center;
+}
+
+.gold-table td {
+  text-align: right;
+}
+
+.price-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.up {
+  border-bottom: 10px solid rgb(23, 128, 16);
+}
+
+.dowm {
+  border-top: 10px solid rgb(255, 5, 5);
+}
+
+.dowmBG {
+  background-color: rgb(213, 141, 141);
+}
+
+.footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  height: 120px;
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* สำหรีบหน้าจอ 922px*/
+@media (max-width: 922px) {
+  .site-header {
+    background: linear-gradient(45deg, #bf4aee, #a0f0ce);
+  }
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.hero-grid {
+  grid-template-columns: repeat(2, minmax(350px, 1fr));
+}
+/* สำหรับหน้าจอ 768 */
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .site-header {
+    background: linear-gradient(45deg, #2afdec, #a0f0ce);
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-checkbox-group {
+    flex-direction: column;
+  }
+  .nav-menu {
+    flex-direction: column;
+    padding-top: 12px;
+  }
+}
+
+/ สำหรับหน้าจอ 576*/ @media (max-width: 576px) {
+  .site-header {
+    background-color: rgb(171, 64, 180);
+  }
+}
+/*Hamburger menu*/
+Hamburger menu {
+  display: block;
+  height: 30px;
+  width: 30px;
+}
+/* สำหรับหน้าจอ 576*/
+@media (max-width: 576px) {
+  .site-header {
+    background: linear-gradient(45deg, #2afdec, #a0f0ce);
+  } /*Hamburger-menu*/
+  #hamburger-menu {
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: relative;
+    z-index: 1000;
+  }
+  /*วาดเส้น hamburger*/
+  #hamburger-menu span,
+  #hamburger-menu span:before,
+  #hamburger-menu span:after {
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    display: block;
+    position: absolute;
+    content: "";
+  }
+  #hamburger-menu span {
+    top: 11px;
+  }
+
+  #hamburger-menu span:before {
+    top: -8px;
+  }
+
+  #hamburger-menu span:after {
+    top: 8px;
+  }
+  #menu {
+    display: none;
+  }
+  .main-nav {
+    display: flex;
+    align-items: center;
+  }
+}
+/*สร้างเส้น X*/
+#hamburger-menu.close span:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+#hamburger-menu.close span {
+  background: transparent;
+}
+#hamburger-menu.close span:after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+#menu.overlay {
+  display: flex;
+}
+/**/
+.order-box-imge {
+  order: 3;
+}
+.order-box-table {
+  order: 1;
+}
+.order-box-form {
+  order: 2;
+}
+.sidebar-widget {
+  display: flex;
+  flex-direction: column;
+}
+.widget order-w-f-intro {
+  order: -5;
+}
+.card order-w-f-green {
+  order: -2;
+}
+.card order-w-f-purple {
+  order: -1;
+}
+.widget order-w-f-fb {
+  order: -4;
+}
+.widget order-w-f-sponser {
+  order: -3;
 }
