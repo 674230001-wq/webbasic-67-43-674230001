@@ -7,165 +7,344 @@
     <title>test_02</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: rgb(148, 148, 148);
+            background-color: #c9c3d3;
             line-height: 1.6;
+            margin: 0;
+            font-family: sans-serif;
         }
 
-
         header {
-            background: #f30707;
-            color: aliceblue;
+            background: linear-gradient(35deg, rgb(24, 233, 222), rgb(70, 52, 236));
+            padding: 10px;
+            margin-bottom: 30px;
+
+        }
+        h1 {
             display: flex;
             align-items: center;
             flex-direction: column;
-
-        }
-
-        header h1 {
-            font-size: 40px;
-            margin-bottom: 5px;
-        }
-
-        header p {
             font-size: 40px;
         }
 
-
+        h2 {
+            font-size: 32px;
+            margin-bottom: 12px;
+        }
 
         .container {
-            max-width: 900px;
-            margin: 14px auto;
+            max-width: 980px;
+            margin: auto;
         }
 
         .card {
-            background: #346fdd;
-            border-radius: 10px;
+            background-color: hsl(0, 0%, 100%);
+            border-radius: 20px;
             padding: 20px;
-            margin-bottom: 1.5px;
-            display: grid;
-            grid-template-columns: 2.5fr 2.5fr 2.5fr;
+            margin-bottom: 20px;
+            height: 70px;
+            width: 900px;
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
         }
 
-        .card-2 {
-            background-color: rgb(61, 88, 240);
-            color: #f8f8f8;
-            padding: 13px 18px;
-            font-size: 16px;
-            text-align: left;
-            width: 500px;
-            border-radius: 12px;
-        
-        }
-        .card-3 {
-            display: grid;
-            grid-template-columns: 1.5fr 3.5fr ;
-            font-size: ;
-
-
+        .card2 {
+            background-color: hsl(300, 3%, 93%);
+            border-radius: 20px;
+            padding: 15px 35px;
+            margin-bottom: 20px;
+            width: 870px;
         }
 
-        .card-h1 {
-            background: #f3f5f5;
-            border-radius: 10px;
-            padding: 20px 20px;
-            margin-left: 200px;
-        
-        }
-
-        footer {
-            background: #d30505;
-            text-align: center;
-            padding: 12px;
-            font-size: 13px;
+        .card3 {
             color: #ffffff;
-            margin-top: 30px;
+            background-color: hsl(0, 82%, 58%);
+            border-radius: 12px;
+            padding: 2px 4px;
+            margin-bottom: 50px;
+            margin-top: 20px;
+            margin-right: 40px;
+            box-shadow: 2px 8px 19px #f1da08;
+            text-align: center;
+            font-size: 40px;
+
+        }
+        .pong {
+            border-radius: 8px;
+            padding: 8px 12px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            margin-right: 35px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr;
+            gap: 20px;
+        }
+
+        .pong1 {
+            background: linear-gradient(35deg, rgb(24, 233, 222), rgb(175, 250, 227));
+            padding: 6px 8px 1px;
+            margin: 5px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            border-radius: 20px;
+            width: 150px;
+            margin-left: 180px;
+            margin-right: -190px;
+        }
+
+        .pong2 {
+            background: linear-gradient(35deg, rgb(24, 233, 222), rgb(175, 250, 227));
+            border-radius: 16px;
+            padding: 15px 35px;
+            margin-bottom: 10px;
+            font-size: 32px;
+            width: 530px;
+            margin-top: 10px;
+        }
+        
+        .line {
+            border-bottom: 2px solid #ffffff;
+        }
+
+        .ufo {
+            font-size: 16px;
+        }
+
+        .ufo {
+            display: grid;
+            grid-template-columns: 180px 3fr;
+            align-items: center;
+        }
+
+        img {
+            margin-left: 550px;
+        }
+
+        .list-menu ul {
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            gap: 30px;
+            margin: 0px;
+            padding: 0;
+        }
+
+        .list-menu li {
+            margin-top: 20px;
+            transition: transform 0.7 ease;
+        }
+
+        .list-menu li:hover {
+            transform: translateY(-5px)
+        }
+
+        .list-menu a {
+            color: rgb(0, 65, 161);
+            text-decoration: none;
+        }
+
+        .phat {
+            color: #ffffff;
+            background: linear-gradient(35deg, rgb(24, 233, 222), rgb(175, 250, 227));
+            text-align: center;
+            padding: 14px 14px;
+            border-radius: 15px;
+            transition: 0.4s;
+        }
+
+        .phat:hover: {
+            background: linear-gradient(35deg, rgb(24, 233, 222), rgb(70, 52, 236));
+            box-shadow: 0 4px 12px rgb(51, 50, 51);
+            transform: translateY(-120px);
+        }
+
+        .phet {
+            width: 220px;
+            height: 220px;
+            border-radius: 50000px;
+            margin-top: -999px;
+            border: 2px solid #000000;
+            transform: translateX(85px);
+            margin-bottom: 150px;
+            transition: 1.6s;
+        }
+
+        .phet:hover {
+            box-shadow: 0 4px 12px gray;
+            transform: scale(1.2) translateX(75px);
+
+        }
+
+        code {
+            background: linear-gradient(35deg, rgb(24, 233, 222), rgb(175, 250, 227));
+            border-radius: 6px;
+            padding: 2px 4px;
+        }
+
+
+        .Ra {
+            color: #ffffff;
+            background: linear-gradient(35deg, rgb(248, 76, 148), rgb(250, 175, 191));
+            text-align: center;
+            padding: 8px 10px;
+            border-radius: 15px;
+
+        }
+
+        .Ra1:hover {
+            background: linear-gradient(35deg, rgb(248, 76, 148), rgb(250, 175, 191));
+            box-shadow: 0 4px 12px rgb(1, 183, 255);
+        }
+
+        .Ra1 {
+            display: block;
+            display: inline-block;
+            margin-top: 15px;
+            background: linear-gradient(35deg, rgb(24, 233, 222), rgb(175, 250, 227));
+            text-align: center;
+            padding: 10px 24px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px hsl(219, 89%, 56%);
+
+        }
+
+        .Ra2:hover {
+            color: #000000;
+            background-color: rgb(112, 162, 255);
+
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            background: linear-gradient(35deg, rgb(185, 194, 189), rgb(224, 247, 243));
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+        }
+
+        .footer2 {
+            margin-bottom: 20px;
+            margin-top: 20px;
+
         }
     </style>
 </head>
 
 <body>
+    <div>
+        <header>
+            <h1>📊รายงานผลเกรด</h1>
+        </header>
+    </div>
+    <main class="container">
 
-    <header>
-        <h1>📊รายงานผลเกรด</h1>
-    </header>
-    <div class="container">
-        <div class="card-h1">
-            <div class="card">
-                <p>🧑‍🎓ข้อมูลนักศึกษา</p>
-                <p>📄ผลการเรียน</p>
-                <p>📌ติดต่อ</p>
+        <section class="card ">
+            <div class="list-menu ul">
+                <ul>
+                    <li class="pong1 phat">
+                        <a href="#s1">🧑‍🎓ข้อมูลนักศึกษา:</a>
+                    </li>
+                    <li class="pong1 phat">
+                        <a href="#s2">📖ผลการเรียน:</a>
+                    </li>
+                    <li class="pong1 phat">
+                        <a href="#s3">📌ติดต่อ:</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </section>
 
+        <section class="card2" id="s1">
 
-       
-            <section class="card-h1">
-            <div class="card-2">
-                <h2>🕴️Mr.Raphiphat Phetphat </h2>
+            <div class="pong2">
 
-                <div class="card-3">
-                    <p>🗓️รหัสนักศึกษา:</p>
-                    <p>674230001</p>
+                <div class="line">
+                    <h2> 🕴️Mr.Raphiphat Phetphat:</h2>
                 </div>
 
-                <div class="card-3">
-                    <p>🥷ชื่อ-นามสกุล:</p>
-                    <p>รพีภัทร พัดเพ็ชร</p>
+                <div class="ufo">
+                    <div class="ufo2">
+                        <div>
+                            <p><strong> 🗓️รหัสนักศึกษา:</strong></p>
+                        </div>
+                        <p>674230025</p>
+                    </div>
+
+                    <div class="ufo2">
+                        <div>
+                            <p><strong>🥷 ชื่อ-นามสกุล:</strong></p>
+                        </div>
+                        <p>นาย รพีภัทร พัดเพ็ชร</p>
+                    </div>
+
+                    <div class="ufo2">
+                        <div>
+                            <p><strong>📚 หมู่เรียน:</strong></p>
+                        </div>
+                        <p>67/43</p>
+                    </div>
+
+                    <div class="ufo2">
+                        <div>
+                            <p><strong>👨‍🏫 อาจารย์ที่ปรึกษา:</strong></p>
+                        </div>
+                        <p>อ.พิชยา สุขปลั่ง</p>
+                    </div>
+
+                    <div class="ufo2">
+                        <div>
+                            <p><strong>🔗 Github:</strong></p>
+                        </div>
+                        <p><code></code></p>
+                    </div>
                 </div>
 
-                <div class="card-3">
-                    <p>🪙หมู่เรียน:</p>
-                    <p>67/43</p>
-                </div>
 
-                <div class="card-3">
-                    <p>👩‍🏫อาจาร์ยที่ปรึกษา:</p>
-                    <p>พิชยา สุขปลั่ง</p>
-                </div>
-
-                <div class="card-3">
-                    <p>⛓️‍💥Github:</p>
-                    <a href=""></a>
-                    
-
-                </div>
-                
             </div>
-            <img src="image/image.webp" alt="โปรไฟล์">
+
+            <div class="img">
+                <img src="image.png" alt="รูปนักศึกษา" class="phet">
+            </div>
 
         </section>
-       
-            <section>
-                <div class="card-h1">
-                    <p>ปี 1 เทอม 1 </p>
-                    <p>ปั 1 เทอม 2 </p>
-                    <p>ปี 2 เทอม 1 </p>
-                
-                </div>
-            </section>
-            
-        
+
         <section>
             <div class="">
+                <div class="pong" id="s2">
 
+                    <div class="Ra1">
+                        <p>📒 ปี 1 เทอม 1 : 2.66</p>
+                    </div>
+
+                    <div class="Ra1">
+                        <p>📒 ปี 1 เทอม 2 : 2.83</p>
+                    </div>
+
+                    <div class="Ra1">
+                        <p>📒 ปี 2 เทอม 1 : 3.41</p>
+                    </div>
+
+                </div>
             </div>
         </section>
 
-
-        </main>
-
-
-
-
+        <section>
+            <div class="card3">
+                <p> 🏆เกรดเฉลี่ยสะสม: 2.97</p>
+            </div>
+        </section>
+    </main>
+    <div class="Ra1 footer2 li">
+        <a href="../index.html"> ⬅️Back to HTML Tutorial</a>
     </div>
-    <footer>
-        <p>© 2024 Webmaster by Raphiphat Phetphat ID.674230001.</p>
-            <p>🏴‍☠️Nakhon Pathom Rajabhat University</p>
-        
-    </footer>
+
+    <div class="footer" id="s3">
+        <p>© 2024 Webmaster by Raphiphat phatphet. ID 674230025.</p>
+        <p>🏢 Nakhon Pathom Rajabhat University</p>
+    </div>
 </body>
 
 </html>
